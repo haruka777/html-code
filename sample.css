@@ -1,0 +1,222 @@
+@charset "Shift_JIS";
+
+/*============================================
+全体
+============================================*/
+* {
+	margin:0; padding:0; 	
+	line-height:1.5;
+	color:#333333;
+
+} 
+
+body {
+	background-color:#999999;
+	text-align:center;
+}
+
+div#pagebody {
+	width:796px; margin:0 auto;
+	text-align:left;
+	background-repeat:repeat-y;
+	background-color:#ffffff;
+}
+
+/*============================================
+ヘッダ
+============================================*/
+div#header {
+	height:77px;
+	background-image:url("images/bg_header.jpg");
+	background-repeat:no-repeat;
+	background-color:#cccccc;
+}
+
+h1 {
+	padding:20px 0px 0px 30px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 a {text-decoration:none;}
+
+/*============================================
+メインメニュー
+============================================*/
+ul#menu {
+    height:42px;
+    background-color:#eeeeee;
+    font-weight:bold;/*文字の太さ*/
+
+    width:100%;display:flex;justify-content: center;padding:0;list-style: none;
+}
+
+p{text-align:center;color:#fff;font-weight:bold;}
+
+/* menu01 */
+.btn-square-shadow_1 {
+    padding: 0em 1em;
+    background: #f5ac0e;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #b37f11;
+    border-radius: 3px;
+}
+
+.btn-square-shadow_1:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;
+}
+
+/* menu02 */
+.btn-square-shadow_2 {
+    padding: 0em 1em;
+    background: #99d866;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #6c9562;
+    border-radius: 3px;
+}
+
+.btn-square-shadow_2:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;
+}
+
+/* menu03 */
+.btn-square-shadow_3 {
+    padding: 0em 1em;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+
+.btn-square-shadow_3:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;
+}
+
+ul#menu a {
+	display:block;
+	height:34px; padding-top:4px;
+	text-decoration:none;text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+/*============================================
+サブメニュー
+============================================*/
+div#submenu {
+	width:160px;
+	margin:10px 10px 10px 25px;
+	display:inline;
+	float:left;
+}
+
+/* サブメニューのヘッダ */
+div#submenu_header {
+	height:26px; padding:4px 0px 0px 0px;
+	background-repeat:no-repeat; background-position:top;
+	background-color:#cccccc;
+	font-size:90%; font-weight:bold; text-align:center;
+}
+
+/* サブメニューのボディ*/
+ul#submenu_body {
+	padding-bottom:6px;
+	background-repeat:no-repeat; background-position:bottom;
+	background-color:#cccccc;
+}
+
+ul#submenu_body li {
+	font-size:90%;
+	list-style-type:none;
+	display:inline;
+}
+
+ul#submenu_body li a {
+	display:block;
+	margin:0px 4px 0px 4px;
+	padding:2px 0px 2px 20px;
+	background-color:#eeeeee;
+	text-decoration:none;
+}
+
+ul#submenu_body li a:hover {
+	background-color:#ffffff;
+}
+
+/*============================================
+コンテンツ
+============================================*/
+div#content {
+	width:560px; margin:10px 20px 10px 0px;
+	float:right;
+}
+
+/*============================================
+ニュース
+============================================*/
+div#column {
+	width:390px; margin-right:5px; padding-top:10px;
+	float:left;
+	background-repeat:no-repeat;
+}
+
+/* ニュースの各項目 */
+h2 {
+	font-size:100%; margin-bottom:10px; padding-left:25px;
+	font-size:95%; border-bottom:solid 1px #cccccc;
+	background-repeat:no-repeat; background-position:left center;
+}
+
+h3 {font-size:90%; margin-left:5px; font-weight:bold}
+
+p {font-size:90%; color:#000000; margin:10px 0px 10px 10px; text-indent:10px;line-height: 90%;}
+
+hr {height:1px; border:solid 1px #000000; margin-bottom:30px;}
+
+/*============================================
+ピックアップ
+============================================*/
+div#pickup {
+	width:150px; padding-top:10px;
+	float:right;
+	background-repeat:no-repeat;
+}
+
+div#pickup ul {
+	margin-left:10px;
+	font-size:90%;
+}
+
+div#pickup li {
+	list-style-type:none;
+    line-height:1.8;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*============================================
+フッタ
+============================================*/
+div#footer {
+	height:42px; text-align:center;
+	clear:both;
+	background-repeat:no-repeat;
+	background-color:#cccccc;
+}
+
+address {
+	font-style:normal;
+	font-size:small;
+    padding:5px 0px 5px 0px;
+}
